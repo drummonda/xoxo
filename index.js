@@ -27,14 +27,6 @@ const getInput = player => async () => {
   game.dispatch(move(turn, [row, col]))
 }
 
-// function getWinner() {
-//   const winner = game.getState().winner;
-//   if(winner) {
-//     console.log("The winner is:", winner);
-//     process.exit(0);
-//   }
-// }
-
 // Create the store
 const game = createStore(gameReducer)
 
